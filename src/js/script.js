@@ -4,6 +4,7 @@ const mProduto = document.getElementById('m-produto')
 const mQuantidade = document.getElementById('m-quantidade')
 const mValor = document.getElementById('m-valor')
 const btnSalvar = document.getElementById('btnSalvar')
+const valorEstoque = (mQuantidade.value * mValor.value)
 const btnNew = document.getElementById("new")
 
 let itens
@@ -28,6 +29,9 @@ function openModal(edit = false, index = 0) {
         mQuantidade.value = ''
         mValor.value = ''
     }
+
+    console.log(edit)
+    console.log(mProduto, mQuantidade, mValor, valorEstoque)
 }
 
 function editItem(index) {
@@ -81,7 +85,9 @@ btnSalvar.addEventListener("click", e => {
     id = undefined
 })
 
-btnNew.addEventListener("click", openModal)
+btnNew.addEventListener("click", (index) => {
+    openModal(false, index)
+})
 
 function loadItens() {
     itens = getItensBD()

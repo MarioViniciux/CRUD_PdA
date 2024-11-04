@@ -24,7 +24,7 @@ button {
     width: 90%;
     height: 80%;
     border-radius: 10px;
-    background: white;
+    background: gray;
 }
 
 .header {
@@ -57,16 +57,6 @@ button {
     overflow: auto;
 }
 
-.divTable::-webkit-scrollbar {
-    width: 12px;
-    background-color: whitesmoke;
-}
-
-.divTable::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: darkgray;
-}
-
 table {
     width: 100%;
     border-spacing: 10px;
@@ -75,11 +65,11 @@ table {
 }
 
 thead {
-    background-color: whitesmoke;
+    background-color: gray;
 }
 
 tr {
-     border-bottom: 1px solid rgb(238, 235, 235) !important;
+    border-bottom: 1px solid rgb(0, 0, 0) !important;
 }
 
 tbody tr td {
@@ -160,7 +150,7 @@ tbody tr td.acao {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 50%;
 }
