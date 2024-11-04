@@ -82,6 +82,12 @@ tr {
      border-bottom: 1px solid rgb(238, 235, 235) !important;
 }
 
+tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+}
+
 thead tr th {
     padding: 5px;
     text-align: start;
@@ -157,4 +163,65 @@ tbody tr td.acao {
     background-color: white;
     border-radius: 10px;
     width: 50%;
+}
+
+.modal label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.modal button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    background-color: rgb(57, 57, 226);
+    color: white;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    } 
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+td button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+td button i {
+    font-size: 25px;
+}
+
+td button i:first-child {
+    margin-inline-start: 10px;
 }
