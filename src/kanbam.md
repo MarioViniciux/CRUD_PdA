@@ -1,6 +1,7 @@
 TODO 
 - Pensando em adicionar filtros, como filtro por ordem alfabética ou por preço
-  
+- Implementação do GitHub Pages
+
 DOING
 - Testes
 
